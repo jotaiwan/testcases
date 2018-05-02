@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Currency;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Set;
+import java.util.Map;
 
 /**
  * Created by jchen on 29/06/17.
@@ -16,6 +17,9 @@ public class TryCurrency {
     public static void main(String[] args) {
         Locale[] locales = Locale.getAvailableLocales();
         List<Currency> currencies = new ArrayList<>(Currency.getAvailableCurrencies());
+
+        Map<String, String> m = new HashMap<>();
+        m.put("key", null);
 
         Collections.sort(currencies, new Comparator<Currency>() {
             @Override
