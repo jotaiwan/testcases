@@ -1,22 +1,20 @@
 package com.trytests;
 
 
+import com.google.common.collect.Iterables;
+import com.trytests.dto.HotelMapping;
+import com.trytests.dto.HotelSupplierProduct;
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.google.common.collect.Iterables;
-import org.apache.commons.lang.StringUtils;
-
-import com.trytests.dto.HotelMapping;
-import com.trytests.dto.HotelSupplierProduct;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.reducing;
